@@ -62,9 +62,10 @@ public class StudyTaskController {
 
     }
 
-
+// this one is to change the status of the task
     @PatchMapping("/{id}/status")
     public StudyTaskView update(@Valid @PathVariable UpdateRequest id){
+
         return studyTaskService.update(id);
     }
 
